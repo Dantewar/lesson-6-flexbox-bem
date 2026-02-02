@@ -1,0 +1,145 @@
+/* ===== BASE ===== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh; /* Screens are minimum of 100vh */
+  display: flex;
+}
+
+.exercise {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== TOP / SQUARES ===== */
+.exercise__top {
+  background: #2b001f;
+  padding: 20px;              /* max 20px */
+  display: flex;
+  justify-content: center;     /* squares centered like figma */
+}
+
+.squares__grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;                   /* max 20px */
+  width: 560px;                /* matches figma proportions */
+}
+
+/* big orange boxes */
+.square {
+  width: calc(50% - 10px);     /* half of gap (20px/2) */
+  height: 70px;
+  background: #f59e0b;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding: 10px;               /* max 20px */
+}
+
+/* inner layout in each square */
+.square__inner {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.square__inner--left {
+  justify-content: flex-start;
+}
+
+.square__inner--center {
+  justify-content: center;
+}
+
+.square__inner--space {
+  justify-content: space-between;
+}
+
+/* small red blocks */
+.mini {
+  width: 22px;
+  height: 22px;
+  background: #7a0022;
+  border-radius: 3px;
+}
+
+.mini--tall {
+  width: 18px;
+  height: 32px;
+}
+
+.mini--wide {
+  width: 52px;
+}
+
+/* spacer between top and bottom (max 20px) */
+.separator {
+  height: 20px;
+  background: transparent;
+}
+
+/* ===== BOTTOM / CIRCLES ===== */
+.exercise__bottom {
+  background: #f59e0b;
+  padding: 20px;               /* max 20px */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;                   /* max 20px */
+  align-items: flex-start;     /* IMPORTANT: stick to left like figma */
+}
+
+.circles__row {
+  display: flex;
+  gap: 20px;                   /* max 20px */
+  justify-content: flex-start;
+}
+
+/* tile squares */
+.tile {
+  width: 110px;
+  height: 95px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tile--navy {
+  background: #0b132b;
+}
+
+.tile--red {
+  background: #7a0022;
+}
+
+/* dot containers */
+.dots {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  align-content: center;
+}
+
+/* control shape of dot groups */
+.dots--5 {
+  width: 58%;
+}
+
+.dots--6 {
+  width: 70%;
+}
+
+/* dots */
+.dot {
+  width: 12px;
+  height: 12px;
+  background: #93c5fd;
+  border-radius: 50%;
+}
