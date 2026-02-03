@@ -1,131 +1,84 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="sv">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lesson 6 – Flexbox & BEM</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Flexbox Practice</title>
+  <link rel="stylesheet" href="styles/reset.css" />
   <link rel="stylesheet" href="styles/style.css" />
 </head>
-<body>
 
+<body>
   <main class="exercise">
 
     <section class="exercise__top">
-      <div class="squares__grid">
+      <div class="containers">
 
-        <div class="square">
-          <div class="square__inner square__inner--left">
-            <div class="mini"></div>
-            <div class="mini"></div>
-            <div class="mini"></div>
-          </div>
+        <div class="container container-1">
+          <div class="square square__inner"></div>
+          <div class="square square__inner"></div>
+          <div class="square square__inner"></div>
         </div>
 
-        <div class="square">
-          <div class="square__inner square__inner--center">
-            <div class="mini mini--tall"></div>
-            <div class="mini mini--tall"></div>
-            <div class="mini mini--tall"></div>
-          </div>
+        <div class="container container-2">
+          <div class="square square__inner"></div>
+          <div class="square square__inner"></div>
+          <div class="square square__inner"></div>
         </div>
 
-        <div class="square">
-          <div class="square__inner square__inner--center">
-            <div class="mini"></div>
-            <div class="mini"></div>
-            <div class="mini"></div>
-          </div>
+        <div class="container container-3">
+          <div class="square square__inner"></div>
+          <div class="square square__inner"></div>
+          <div class="square square__inner"></div>
         </div>
 
-        <div class="square">
-          <div class="square__inner square__inner--space">
-            <div class="mini"></div>
-            <div class="mini"></div>
-            <div class="mini"></div>
-          </div>
+        <div class="container container-4">
+          <div class="square square__inner"></div>
+          <div class="square square__inner"></div>
+          <div class="square square__inner square-3"></div>
         </div>
 
-        <div class="square">
-          <div class="square__inner square__inner--space">
-            <div class="mini mini--tall"></div>
-            <div class="mini"></div>
-            <div class="mini mini--tall"></div>
-          </div>
+        <div class="container container-5">
+          <div class="square square__inner text-square">My text</div>
+          <div class="square square__inner text-square">My text</div>
+          <div class="square square__inner text-square">My text</div>
         </div>
 
-        <div class="square">
-          <div class="square__inner square__inner--center">
-            <div class="mini"></div>
-            <div class="mini mini--wide"></div>
-            <div class="mini"></div>
-          </div>
+        <div class="container container-6">
+          <div class="square square__inner"></div>
+          <div class="square square__inner square-grow"></div>
+          <div class="square square__inner"></div>
         </div>
 
       </div>
     </section>
 
     <section class="exercise__bottom">
+      <div class="tiles">
 
-      <div class="circles__row">
-        <div class="tile tile--navy">
-          <div class="dots dots--5">
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-          </div>
+        <div class="tile tile--navy tile-1 dots">
+          <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+          <span class="dot"></span><span class="dot"></span>
         </div>
 
-        <div class="tile tile--red">
-          <div class="dots dots--5">
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-          </div>
+        <div class="tile tile--red tile-2 dots">
+          <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+          <span class="dot"></span><span class="dot"></span>
         </div>
 
-        <div class="tile tile--navy">
-          <div class="dots dots--6">
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-          </div>
+        <div class="tile tile--navy tile-3 dots">
+          <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+          <span class="dot"></span><span class="dot"></span><span class="dot"></span>
         </div>
+
+        <div class="tile tile--red tile-4 dots">
+          <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+          <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+        </div>
+
       </div>
-
-      <div class="circles__row">
-        <div class="tile tile--red">
-          <div class="dots dots--6">
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-          </div>
-        </div>
-
-        <div class="tile tile--navy">
-          <div class="dots dots--6">
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-          </div>
-        </div>
-      </div>
-
     </section>
 
   </main>
-
 </body>
 </html>
