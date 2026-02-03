@@ -1,11 +1,10 @@
-/* ===== BASE ===== */
 * {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  min-height: 100vh; /* Screens are minimum of 100vh */
+  min-height: 100vh;
   display: flex;
 }
 
@@ -16,33 +15,30 @@ body {
   flex-direction: column;
 }
 
-/* ===== TOP / SQUARES ===== */
 .exercise__top {
   background: #2b001f;
-  padding: 20px;              /* max 20px */
+  padding: 20px;
   display: flex;
-  justify-content: center;     /* squares centered like figma */
+  justify-content: center;
 }
 
 .squares__grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;                   /* max 20px */
-  width: 560px;                /* matches figma proportions */
+  gap: 20px;
+  width: 560px;
 }
 
-/* big orange boxes */
 .square {
-  width: calc(50% - 10px);     /* half of gap (20px/2) */
+  width: calc(50% - 10px);
   height: 70px;
   background: #f59e0b;
   border-radius: 10px;
   display: flex;
   align-items: center;
-  padding: 10px;               /* max 20px */
+  padding: 10px;
 }
 
-/* inner layout in each square */
 .square__inner {
   width: 100%;
   display: flex;
@@ -62,7 +58,6 @@ body {
   justify-content: space-between;
 }
 
-/* small red blocks */
 .mini {
   width: 22px;
   height: 22px;
@@ -79,29 +74,20 @@ body {
   width: 52px;
 }
 
-/* spacer between top and bottom (max 20px) */
-.separator {
-  height: 20px;
-  background: transparent;
-}
-
-/* ===== BOTTOM / CIRCLES ===== */
 .exercise__bottom {
   background: #f59e0b;
-  padding: 20px;               /* max 20px */
+  padding: 20px;
   display: flex;
   flex-direction: column;
-  gap: 20px;                   /* max 20px */
-  align-items: flex-start;     /* IMPORTANT: stick to left like figma */
+  gap: 20px;
+  align-items: flex-start;
 }
 
 .circles__row {
   display: flex;
-  gap: 20px;                   /* max 20px */
-  justify-content: flex-start;
+  gap: 20px;
 }
 
-/* tile squares */
 .tile {
   width: 110px;
   height: 95px;
@@ -118,7 +104,6 @@ body {
   background: #7a0022;
 }
 
-/* dot containers */
 .dots {
   display: flex;
   flex-wrap: wrap;
@@ -127,7 +112,6 @@ body {
   align-content: center;
 }
 
-/* control shape of dot groups */
 .dots--5 {
   width: 58%;
 }
@@ -136,7 +120,6 @@ body {
   width: 70%;
 }
 
-/* dots */
 .dot {
   width: 12px;
   height: 12px;
